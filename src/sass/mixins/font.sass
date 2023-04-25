@@ -1,5 +1,4 @@
 @use '../../sass/variables' as v
-
 @mixin title-font
   font-family: v.$font-family
   font-style: normal
@@ -7,6 +6,8 @@
   color: v.$color-main
   font-size: 55px
   line-height: 1.09
+  margin: 0
+  padding: 0
 
 @mixin subtitle-font
   font-family: v.$font-family
@@ -16,14 +17,25 @@
   font-size: 18px
   line-height: 1.56
   opacity: 0.7
+  margin: 0
+  padding: 0
 
-@mixin subtitle-font
+@mixin link-font
   font-family: v.$font-family
   font-style: normal
-  font-weight: 400
+  font-weight: 500
   color: v.$color-main
-  opacity: 0.7
+  font-size: 14px
+  line-height: 1.29
+  text-decoration: none
+  margin: 0
+  padding: 0
 
-@mixin font
+@mixin quote-font
   font-family: v.$font-family
   font-style: normal
+  font-weight: 600
+  font-size: 34px
+  line-height: 1.29
+  letter-spacing: -0.5px
+  color: v.$color-main

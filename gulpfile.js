@@ -35,7 +35,7 @@ gulp.task("default", function () {
       livereload: true,
       defaultFile: "index.html",
       directoryListing: false,
-      open: true,
+      open: false,
     })
   );
 });

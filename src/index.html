@@ -1,103 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <meta name="description" content="Шоссе, ТТ и Грэвел" />
+    <meta name="author" content="Клюкова Кристина" />
+    <meta name="keywords" content="Велосипеды для разных местностей" />
+    <title>Шоссе, ТТ и Грэвел</title>
+    <link rel="stylesheet" href="../dist/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
-  <meta name="description" content="Шоссе, ТТ и Грэвел" />
-  <meta name="author" content="Клюкова Кристина" />
-  <meta name="keywords" content="Велосипеды для разных местностей" />
-  <title>Шоссе, ТТ и Грэвел</title>
-  <link rel="stylesheet" href="../dist/css/index.css">
-</head>
-
-<body class="page">
-  <header class="header">
-    <nav class="header__links">
-      <a class="header_link" href="#">Покрытия и градиенты</a>
-      <a class="header_link" href="#">Велосипеды</a>
-      <a class="header_link" href="#">Тренировки</a>
-    </nav>
-  </header>
-  <main class="content">
-    <section>
-      <h1>Шоссе, ТТ и Грэвел</h1>
-      <p></p>
-      <button></button>
-      <p></p>
-      <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"><img
-          src="./images/Cannondale Systemsix Himod.png" alt="Велосипед марки Cannondale Systemsix Himod"></a>
-
-      <img src="./images/forest.png" alt="Проселочная дорога в лесу">
-    </section>
-
-    <section>
-      <img src="./images/road to village.png" alt="Дорога в деревню">
-      <blockquote>«Катайся много или мало, долго или коротко, как хочешь - но катайся»</blockquote>
-      <cite>Эдди Меркс <span>Велогонщик</span></cite>
-    </section>
-
-    <section>
-      <h2>Шоссе</h2>
-      <p>На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
-      <div>
-        <img src="./images/highway.png" alt="Шоссе">
-        <img src="./images/gravel.png" alt="Грэвел">
-        <img src="./images/way highway.svg" alt="схематические неровности дороги">
-      </div>
-      <div>
-        <button></button>
-        <button></button>
-      </div>
-    </section>
-
-    <section>
-      <h2>Велосипеды</h2>
-      <nav>
-        <a href="#">Шоссе</a>
-        <a href="#">Грэвел</a>
-        <a href="#">TT</a>
+  <body class="page">
+    <header class="header page__header">
+      <nav class="header__links">
+        <a class="header__link" href="#">Покрытия и градиенты</a>
+        <a class="header__link" href="#">Велосипеды</a>
+        <a class="header__link" href="#">Тренировки</a>
       </nav>
+    </header>
+    <main class="content page__content">
+      <section class="total">
+        <h1 class="total__title">Шоссе, ТТ и Грэвел</h1>
+        <p class="total__subtitle">
+          Триатлонные старты, горные серпантины или грейвел заезды по живописным
+          маршрутам – нужно только определиться с выбором велосипеда и
+          отправиться в путь.
+        </p>
+        <button class="total__button">Подробнее</button>
+        <p class="total__name-bike">
+          Cannondale Systemsix<span class="total__colorBG"></span>
+        </p>
+        <div class="total__bike-container">
+          <img
+            class="total__bike"
+            src="./images/Cannondale Systemsix Himod.png"
+            alt="Велосипед марки Cannondale Systemsix Himod"
+          />
+        </div>
+        <img
+          class="total__background"
+          src="./images/forest.png"
+          alt="Проселочная дорога в лесу"
+        />
+      </section>
+
+      <section class="quote">
+        <img
+          class="quote__image"
+          src="./images/road to village.png"
+          alt="Дорога в деревню"
+        />
+        <div class="quote__container">
+          <blockquote class="quote__text">
+            «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+          </blockquote>
+          <cite class="quote__autor"
+            >Эдди Меркс<span class="quote__profession">Велогонщик</span></cite
+          >
+        </div>
+      </section>
+
+      <section class="slider">
+        <h2 class="slider__title">Шоссе</h2>
+        <p class="slider__subtitle">
+          На шоссейном велосипеде можно ездить по асфальту на разных градиентах:
+          будь то горы или равнины. Гонки проходят в командном пелотоне, но
+          тренироваться можно и самостоятельно.
+        </p>
+        <div class="slider__container-image">
+          <img class="slider__image" src="./images/highway.png" alt="Шоссе" />
+          <img class="slider__image" src="./images/gravel.png" alt="Грэвел" />
+          <img
+            src="./images/way highway.svg"
+            alt="схематические неровности дороги"
+          />
+        </div>
+        <div class="slider__container-button">
+          <button calss="slider__button"></button>
+          <button calss="slider__button"></button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Велосипеды</h2>
+        <nav>
+          <a href="#">Шоссе</a>
+          <a href="#">Грэвел</a>
+          <a href="#">TT</a>
+        </nav>
+        <div>
+          <a href="#">
+            <img
+              src="./images/Cervelo Caledonia-5.png"
+              alt="Велосипед марки Cervelo Caledonia-5"
+            />
+            <figcaption>Cervelo Caledonia-5</figcaption>
+          </a>
+          <a href="#">
+            <img
+              src="./images/Cannondale Systemsix Himod.png"
+              alt="Велосипед марки Cannondale Systemsix Himod"
+            />
+            <figcaption>Cannondale Systemsix Himod</figcaption>
+          </a>
+          <a href="#">
+            <img
+              src="./images/Trek Domane SL-7.png"
+              alt="Велосипед марки Trek Domane SL-7"
+            />
+            <figcaption>Trek Domane SL-7</figcaption>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Тренировки</h2>
+        <p>
+          Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+          Komoot, а записать эти тренировки поможет приложение Strava, а также
+          это приложение позволит построить тренировочный план.
+        </p>
+        <img src="./images/road.png" alt="Шоссе в лесу" />
+        <nav>
+          <a href="#">Strava</a>
+          <a href="#">Komoot</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2>Подпишитесь на рассылку —</h2>
+      <input type="email" placeholder="Ваш e-mail" />
       <div>
-        <a href="#">
-          <img src="./images/Cervelo Caledonia-5.png" alt="Велосипед марки Cervelo Caledonia-5">
-          <figcaption>Cervelo Caledonia-5</figcaption>
-        </a>
-        <a href="#">
-          <img src="./images/Cannondale Systemsix Himod.png" alt="Велосипед марки Cannondale Systemsix Himod">
-          <figcaption>Cannondale Systemsix Himod</figcaption>
-        </a>
-        <a href="#">
-          <img src="./images/Trek Domane SL-7.png" alt="Велосипед марки Trek Domane SL-7">
-          <figcaption>Trek Domane SL-7</figcaption>
-        </a>
+        <p class="footer__autor">&#169;Road Club 2021</p>
+        <div>
+          <img src="./images/sun.svg" alt="солнце" />
+          <input type="checkbox" name="" id="" />
+          <img src="./images/moon.svg" alt="луна" />
+        </div>
       </div>
-    </section>
-
-    <section>
-      <h2>Тренировки</h2>
-      <p>Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
-      <img src="./images/road.png" alt="Шоссе в лесу">
-      <nav>
-        <a href="#">Strava</a>
-        <a href="#">Komoot</a>
-      </nav>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <h2>Подпишитесь на рассылку —</h2>
-    <input type="email" placeholder="Ваш e-mail">
-    <div>
-      <p class="footer__autor">&#169;Road Club 2021</p>
-      <div>
-        <img src="./images/sun.svg" alt="солнце">
-        <input type="checkbox" name="" id="">
-        <img src="./images/moon.svg" alt="луна">
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
