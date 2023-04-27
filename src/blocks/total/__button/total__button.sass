@@ -3,29 +3,32 @@
   grid-row: 3
   background: #24B47E
   border-radius: 4px
-  font-family: v.$font-family
-  font-style: normal
-  font-weight: 600
-  font-size: 14px
-  line-height: 1.29
   padding: 0
   margin: 0
   border: none
   width: 180px
   height: 50px
-  color: #FFFFFF
   position: relative
   cursor: pointer
+  span
+    color: #FFFFFF
+    font-family: v.$font-family
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 1.29
+    position: relative
+    z-index: 1
   &::before
-    content: ''
+    content: ""
     position: absolute
+    display: block
     top: 0
     left: 0
     width: 0
     height: 50px
     border-radius: 4px
-    transition: all 2s ease
-  &:hover:before
-    width: 100%
+    transition: .4s
     background: #319E75
-
+  &:hover::before
+    width: 100%

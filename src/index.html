@@ -10,7 +10,7 @@
     <meta name="author" content="Клюкова Кристина" />
     <meta name="keywords" content="Велосипеды для разных местностей" />
     <title>Шоссе, ТТ и Грэвел</title>
-    <link rel="stylesheet" href="../dist/css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body class="page">
@@ -29,7 +29,7 @@
           маршрутам – нужно только определиться с выбором велосипеда и
           отправиться в путь.
         </p>
-        <button class="total__button">Подробнее</button>
+        <button class="total__button"><span>Подробнее</span></button>
         <p class="total__name-bike">
           Cannondale Systemsix<span class="total__colorBG"></span>
         </p>
@@ -73,73 +73,98 @@
         <div class="slider__container-image">
           <img class="slider__image" src="./images/highway.png" alt="Шоссе" />
           <img class="slider__image" src="./images/gravel.png" alt="Грэвел" />
+          <img class="slider__image" />
           <img
+            class="slider__image-way"
             src="./images/way highway.svg"
             alt="схематические неровности дороги"
           />
         </div>
         <div class="slider__container-button">
-          <button calss="slider__button"></button>
-          <button calss="slider__button"></button>
+          <button class="slider__button slider__button_type_back"></button>
+          <button class="slider__button slider__button_type_forward"></button>
         </div>
       </section>
 
-      <section>
-        <h2>Велосипеды</h2>
-        <nav>
-          <a href="#">Шоссе</a>
-          <a href="#">Грэвел</a>
-          <a href="#">TT</a>
-        </nav>
-        <div>
-          <a href="#">
+      <section class="bicycles">
+        <div class="bicycles__top">
+          <h2 class="bicycles__title">Велосипеды</h2>
+          <nav class="bicycles__ways">
+            <a class="bicycles__way bicycles__way_active" href="#">Шоссе</a>
+            <a class="bicycles__way" href="#">Грэвел</a>
+            <a class="bicycles__way" href="#">TT</a>
+          </nav>
+        </div>
+        <nav class="bicycles__cards">
+          <a class="bicycles__card" href="#">
             <img
+              class="bicycles__image"
               src="./images/Cervelo Caledonia-5.png"
               alt="Велосипед марки Cervelo Caledonia-5"
             />
-            <figcaption>Cervelo Caledonia-5</figcaption>
+            <figcaption class="bicycles__name">Cervelo Caledonia-5</figcaption>
           </a>
-          <a href="#">
+          <a class="bicycles__card" href="#">
             <img
+              class="bicycles__image"
               src="./images/Cannondale Systemsix Himod.png"
               alt="Велосипед марки Cannondale Systemsix Himod"
             />
-            <figcaption>Cannondale Systemsix Himod</figcaption>
+            <figcaption class="bicycles__name">
+              Cannondale Systemsix Himod
+            </figcaption>
           </a>
-          <a href="#">
+          <a class="bicycles__card" href="#">
             <img
+              class="bicycles__image"
               src="./images/Trek Domane SL-7.png"
               alt="Велосипед марки Trek Domane SL-7"
             />
-            <figcaption>Trek Domane SL-7</figcaption>
+            <figcaption class="bicycles__name">Trek Domane SL-7</figcaption>
           </a>
-        </div>
+        </nav>
       </section>
 
-      <section>
-        <h2>Тренировки</h2>
-        <p>
-          Чтобы найти маршрут для тренировки можно воспользоваться сервисом
-          Komoot, а записать эти тренировки поможет приложение Strava, а также
-          это приложение позволит построить тренировочный план.
-        </p>
-        <img src="./images/road.png" alt="Шоссе в лесу" />
-        <nav>
-          <a href="#">Strava</a>
-          <a href="#">Komoot</a>
-        </nav>
+      <section class="training">
+        <div class="training__text">
+          <h2 class="training__title">Тренировки</h2>
+          <p class="training__subtitle">
+            Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+            Komoot, а записать эти тренировки поможет приложение Strava, а также
+            это приложение позволит построить тренировочный план.
+          </p>
+          <nav class="training__links">
+            <a class="training__link" href="#">Strava</a>
+            <a class="training__link" href="#">Komoot</a>
+          </nav>
+        </div>
+        <img
+          class="training__image"
+          src="./images/road.png"
+          alt="Шоссе в лесу"
+        />
       </section>
     </main>
 
     <footer class="footer">
-      <h2>Подпишитесь на рассылку —</h2>
-      <input type="email" placeholder="Ваш e-mail" />
-      <div>
-        <p class="footer__autor">&#169;Road Club 2021</p>
-        <div>
-          <img src="./images/sun.svg" alt="солнце" />
-          <input type="checkbox" name="" id="" />
-          <img src="./images/moon.svg" alt="луна" />
+      <div class="footer__container">
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+        <input class="footer__input" type="email" placeholder="Ваш e-mail" />
+        <div class="footer__bottom">
+          <p class="footer__autor">&#169;Road Club 2021</p>
+          <div class="footer__theme">
+            <img
+              class="footer__imag-theme"
+              src="./images/sun.svg"
+              alt="солнце"
+            />
+            <input class="footer__checkbox" type="checkbox" name="" id="" />
+            <img
+              class="footer__imag-theme"
+              src="./images/moon.svg"
+              alt="луна"
+            />
+          </div>
         </div>
       </div>
     </footer>

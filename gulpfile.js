@@ -2,6 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const server = require("gulp-server-livereload");
 const DIST_PATH = "./dist";
 
 function css() {
@@ -18,7 +19,7 @@ function html() {
 function fonts() {
   return gulp
     .src("./src/vendor/fonts/**/*")
-    .pipe(gulp.dest(`${DIST_PATH}/fonts`));
+    .pipe(gulp.dest(`${DIST_PATH}`));
 }
 function images() {
   return gulp.src("./src/images/**/*").pipe(gulp.dest(`${DIST_PATH}/images`));
@@ -27,19 +28,16 @@ function public() {
   return gulp.src("./src/public/**/*").pipe(gulp.dest(`${DIST_PATH}`));
 }
 
-var server = require("gulp-server-livereload");
-
-gulp.task("default", function () {
-  gulp.src("dist").pipe(
+function serv() {
+  return gulp.src(`${DIST_PATH}`).pipe(
     server({
       livereload: true,
-      defaultFile: "index.html",
       directoryListing: false,
       open: false,
     })
   );
-});
+};
 exports.css = css;
 exports.html = html;
 exports.assets = gulp.series(fonts, images, public);
-exports.default = gulp.series(css, html, fonts, images, public);
+exports.default = gulp.series(css, html, fonts, images, public, serv);
