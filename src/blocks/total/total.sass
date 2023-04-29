@@ -1,6 +1,17 @@
+@use '../../sass/variables.sass' as v
 .total
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
   row-gap: 50px
-  column-gap: 60px
+  justify-content: space-between
   position: relative
+  @media screen and (max-width: v.$screen-tab)
+    margin-left: 5.6%
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 10px
+  @media screen and (max-width: v.$screen-mb)
+    margin: 0 18px 0 18px
+    grid-template-columns: 1fr
+    gap:40px
+    justify-items: center
+    overflow: hidden

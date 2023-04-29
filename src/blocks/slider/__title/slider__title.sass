@@ -1,3 +1,11 @@
 @use '../../../sass/mixins/font.sass' as font
+@use '../../../sass/variables.sass' as v
 .slider__title
   @include font.title-font
+  @media screen and (max-width: v.$screen-tab)
+    font-size: calc(32px + 2.1vw)
+  @media screen and (max-width: v.$screen-mb)
+    margin-top: 40px
+    grid-row: 1
+    font-size: 32px
+    line-height: 1.25

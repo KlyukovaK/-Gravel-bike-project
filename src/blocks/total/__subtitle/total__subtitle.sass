@@ -1,5 +1,11 @@
 @use '../../../sass/mixins/font' as font
+@use '../../../sass/variables.sass' as v
 .total__subtitle
   @include font.subtitle-font()
   grid-row: 2
   max-width: 460px
+  @media screen and (max-width: v.$screen-mb)
+    grid-row: 3
+    font-size: 12px
+    line-height: 1.5
+    max-width: 284px

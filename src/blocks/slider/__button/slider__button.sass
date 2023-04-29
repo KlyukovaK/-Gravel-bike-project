@@ -1,3 +1,4 @@
+@use '../../../sass/variables' as v
 .slider__button
   width: 50px
   height: 50px
@@ -7,5 +8,11 @@
   margin: 0
   transition: .3s
   cursor: pointer
+  background: url("../../images/button_back.svg") center no-repeat
+  background-color: #EBEBEB
   &:hover
     opacity: 0.6
+  @media screen and (max-width: v.$screen-mb)
+    width: 24px
+    height: 24px
+    background-image: url("../../images/button_back_mb.svg")

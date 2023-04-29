@@ -1,11 +1,16 @@
+@use '../../../sass/variables' as v
 .bicycles__image
   filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06))
   border-radius: 20px
-  width: minmax(100%,380px)
+  max-width: 340px
   padding: 20px
   background-color: #F4F4F4
   object-fit: cover
+  width: 100%
   transition: .3s
   cursor: pointer
   &:hover
     filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.11))
+  @media screen and (max-width: v.$screen-mb)
+    max-width: 253px
+    padding: 15px 14px 37px 14px

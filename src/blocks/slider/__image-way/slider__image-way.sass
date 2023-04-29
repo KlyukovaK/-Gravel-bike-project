@@ -1,7 +1,13 @@
+@use '../../../sass/variables' as v
 .slider__image-way
   position: absolute
   bottom: 16px
   left: 0px
   background: url("../../images/Rectangle-grin.svg") no-repeat
   padding: 12px 34px 12px 16px
+  @media screen and (max-width: v.$screen-mb)
+    width: 35px
+    padding: 8px 24px 8px 11px
+    background-image: url("../../images/Rectangle-grin_mb.svg")
+    bottom: 22px
 

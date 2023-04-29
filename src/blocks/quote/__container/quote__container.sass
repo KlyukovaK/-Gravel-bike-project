@@ -1,5 +1,8 @@
+@use '../../../sass/variables.sass' as v
 .quote__container
   display: flex
   flex-direction: column
   justify-content: space-between
   margin-left: 80px
+  @media screen and (max-width: v.$screen-tab)
+    margin-left: 0

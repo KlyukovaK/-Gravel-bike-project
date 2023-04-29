@@ -1,0 +1,11 @@
+.footer__checkbox-input
+  width: 1px
+  height: 1px
+  overflow: hidden
+  clip: rect(0 0 0 0)
+  position: absolute
+  transition: .3s ease
+  &:checked ~ .footer__checkbox-stile
+    background: #545454
+  &:checked ~ .footer__checkbox-stile::before
+    left: 22px

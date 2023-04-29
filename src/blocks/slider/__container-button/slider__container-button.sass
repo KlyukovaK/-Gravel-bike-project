@@ -1,4 +1,11 @@
+@use '../../../sass/variables' as v
 .slider__container-button
   max-width: 120px
   display: flex
   justify-content: space-between
+  @media screen and (max-width: v.$screen-mb)
+    grid-row: 1
+    justify-self: end
+    align-self: end
+    width: 58px
+    height: 24px

@@ -1,3 +1,7 @@
+@use '../../../sass/variables.sass' as v
 .quote__image
   width: 100%
   object-fit: cover
+  @media screen and (max-width: v.$screen-mb)
+    padding-top: 20px
+    border-top: 1px solid #E3E3E3

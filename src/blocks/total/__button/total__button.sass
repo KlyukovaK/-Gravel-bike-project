@@ -10,7 +10,7 @@
   height: 50px
   position: relative
   cursor: pointer
-  span
+  &-span
     color: #FFFFFF
     font-family: v.$font-family
     font-style: normal
@@ -32,3 +32,9 @@
     background: #319E75
   &:hover::before
     width: 100%
+  @media screen and (max-width: v.$screen-mb)
+    grid-row: 4
+    width: 284px
+    &-span
+      font-size: 13px
+      line-height: 1.46

@@ -1,0 +1,9 @@
+@use '../../../sass/variables.sass' as v
+.slider__image
+  object-fit: cover
+  overflow: clip
+  @media screen and (max-width: v.$screen-tab)
+    width: 100%
+    display: none
+    &:first-of-type
+      display: block

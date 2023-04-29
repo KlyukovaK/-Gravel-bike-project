@@ -1,3 +1,7 @@
+@use '../../../sass/variables.sass' as v
 .page__header
   margin: 0 auto
   padding-bottom: 20px
+  @media screen and (max-width: v.$screen-mb)
+    padding-bottom: 0
+    margin: 0
