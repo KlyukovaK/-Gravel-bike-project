@@ -1,0 +1,11 @@
+@use '../../../sass/variables' as v
+.bicycles__card
+  text-decoration: none
+  margin-bottom: 60px
+  @media screen and (max-width: v.$screen-mb)
+    margin-bottom:0
+    display: none
+    position: relative
+    &:first-of-type
+      display: block
+

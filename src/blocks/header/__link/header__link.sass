@@ -1,0 +1,7 @@
+@use '../../../sass/mixins/font' as font
+.header__link
+  @include font.link-font()
+  transition: 0.3s
+  &:hover
+    opacity: 0.75
+    cursor: pointer
