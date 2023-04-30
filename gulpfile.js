@@ -9,7 +9,7 @@ const DIST_PATH = "./dist";
 
 function css() {
   return gulp
-    .src("./src/sass/index.sass")
+    .src(["./src/sass/index-dark.sass","./src/sass/index.sass"])
     .pipe(sass({ includePaths: ["src/scss"] }).on("error", sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(sass({ outputStyle: "compressed" }))
@@ -18,7 +18,7 @@ function css() {
 }
 function scripts() {
   return gulp
-    .src(["./src/pages/index.js"])
+    .src(["./src/**/index.js"])
     .pipe(uglify())
     .pipe(gulp.dest(`${DIST_PATH}/js`));
 }
@@ -55,7 +55,7 @@ function cleanDist() {
   return gulp.src("dist").pipe(clean());
 }
 // exports.assets = gulp.series(fonts, images, public);
-exports.cleanDist= cleanDist
+exports.cleanDist = cleanDist;
 exports.default = gulp.parallel(
   css,
   html,

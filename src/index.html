@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1"
-    />
-    <meta name="description" content="Шоссе, ТТ и Грэвел" />
-    <meta name="author" content="Клюкова Кристина" />
-    <meta name="keywords" content="Велосипеды для разных местностей" />
+    >
+    <meta name="description" content="Шоссе, ТТ и Грэвел">
+    <meta name="author" content="Клюкова Кристина">
+    <meta name="keywords" content="Велосипеды для разных местностей">
     <title>Шоссе, ТТ и Грэвел</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="#" id="dark">
   </head>
 
   <body class="page page_theme_dark">
@@ -49,28 +50,27 @@
             class="total__bike"
             src="./images/bike-fix.png"
             alt="Велосипед марки Cannondale Systemsix Himod"
-          />
+          >
         </div>
         <img
           class="total__background"
           src="./images/forest.png"
           alt="Проселочная дорога в лесу"
-        />
+        >
       </section>
 
       <section class="quote">
         <img
           class="quote__image"
-          src="./images/road to village.png"
+          src="./images/road-to-village.png"
           alt="Дорога в деревню"
-        />
+        >
         <div class="quote__container">
           <blockquote class="quote__text quote__text_theme_dark">
             «Катайся много или мало, долго или коротко, как хочешь - но катайся»
           </blockquote>
           <cite class="quote__autor quote__autor_theme_dark"
-            >Эдди Меркс<span
-              class="quote__profession quote__professionh"
+            >Эдди Меркс<span class="quote__profession quote__professionh"
               >Велогонщик</span
             ></cite
           >
@@ -85,14 +85,16 @@
           тренироваться можно и самостоятельно.
         </p>
         <div class="slider__container-image">
-          <img class="slider__image" src="./images/highway.png" alt="Шоссе" />
-          <img class="slider__image" src="./images/gravel.png" alt="Грэвел" />
-          <img class="slider__image" />
+          <div class="slider__line">
+            <img class="slider__image" src="./images/highway.png" alt="Шоссе">
+            <img class="slider__image" src="./images/gravel.png" alt="Грэвел">
+            <img class="slider__image" src="./images/TT.png" alt="TT">
+          </div>
           <img
             class="slider__image-way"
-            src="./images/way highway.svg"
+            src="./images/way-highway.svg"
             alt="схематические неровности дороги"
-          />
+          >
         </div>
         <div class="slider__container-button">
           <button
@@ -110,8 +112,14 @@
         <div class="bicycles__top">
           <h2 class="bicycles__title bicycles__title_theme_dark">Велосипеды</h2>
           <nav class="bicycles__ways">
-            <a class="bicycles__way bicycles__way_active bicycles__way_theme_dark-active" href="#">Шоссе</a>
-            <a class="bicycles__way bicycles__way_theme_dark" href="#">Грэвел</a>
+            <a
+              class="bicycles__way bicycles__way_theme_dark bicycles__way_active bicycles__way_theme_dark-active"
+              href="#"
+              >Шоссе</a
+            >
+            <a class="bicycles__way bicycles__way_theme_dark" href="#"
+              >Грэвел</a
+            >
             <a class="bicycles__way bicycles__way_theme_dark" href="#">TT</a>
           </nav>
           <select class="bicycles__select bicycles__select_theme_dark">
@@ -121,31 +129,35 @@
           </select>
         </div>
         <nav class="bicycles__cards">
-          <a class="bicycles__card" href="#">
+          <a class="bicycles__card" id="bicycl1" target="_blank" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">
             <img
               class="bicycles__image"
-              src="./images/Cervelo Caledonia-5.png"
+              src="./images/Cervelo-Caledonia-5.png"
               alt="Велосипед марки Cervelo Caledonia-5"
-            />
-            <figcaption class="bicycles__name bicycles__name_theme_dark">Cervelo Caledonia-5</figcaption>
+            >
+            <span class="bicycles__name bicycles__name_theme_dark">
+              Cervelo Caledonia-5
+            </span>
           </a>
-          <a class="bicycles__card" href="#">
+          <a class="bicycles__card" id="bicycl2" target="_blank" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J">
             <img
               class="bicycles__image"
-              src="./images/Cannondale Systemsix Himod.png"
+              src="./images/Cannondale-Systemsix-Himod.png"
               alt="Велосипед марки Cannondale Systemsix Himod"
-            />
-            <figcaption class="bicycles__name bicycles__name_theme_dark">
+            >
+            <span class="bicycles__name bicycles__name_theme_dark">
               Cannondale Systemsix Himod
-            </figcaption>
+            </span>
           </a>
-          <a class="bicycles__card" href="#">
+          <a class="bicycles__card" id="bicycl3" target="_blank" href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF">
             <img
               class="bicycles__image"
-              src="./images/Trek Domane SL-7.png"
+              src="./images/Trek-Domane-SL-7.png"
               alt="Велосипед марки Trek Domane SL-7"
-            />
-            <figcaption class="bicycles__name bicycles__name_theme_dark">Trek Domane SL-7</figcaption>
+            >
+            <span class="bicycles__name bicycles__name_theme_dark">
+              Trek Domane SL-7
+            </span>
           </a>
         </nav>
         <ul class="bicycles__selection">
@@ -163,61 +175,81 @@
           это приложение позволит построить тренировочный план.
         </p>
         <nav class="training__links">
-          <a class="training__link training__link_theme_dark" href="#">Strava</a>
-          <a class="training__link training__link_theme_dark" href="#">Komoot</a>
+          <a class="training__link training__link_theme_dark" target="_blank" href="https://www.strava.com"
+            >Strava</a
+          >
+          <a class="training__link training__link_theme_dark" target="_blank"  href="https://www.komoot.com"
+            >Komoot</a
+          >
         </nav>
         <img
           class="training__image"
           src="./images/road.png"
           alt="Шоссе в лесу"
-        />
+        >
       </section>
     </main>
 
     <footer class="footer footer_theme_dark">
       <div class="footer__container">
-        <h2 class="footer__title footer__title_theme_dark">Подпишитесь на рассылку —</h2>
+        <h2 class="footer__title footer__title_theme_dark">
+          Подпишитесь на рассылку —
+        </h2>
         <div class="footer__input-case">
-          <input class="footer__input footer__input_theme_dark" type="email" placeholder="Ваш e-mail" />
+          <input
+            class="footer__input footer__input_theme_dark"
+            type="email"
+            placeholder="Ваш e-mail"
+          >
           <span class="footer__input-subtitle">Круто!</span>
-          <div class="footer__input-buttom footer__input-buttom_theme_dark">ok</div>
+          <div class="footer__input-buttom footer__input-buttom_theme_dark">
+            ok
+          </div>
         </div>
         <div class="footer__bottom">
-          <p class="footer__autor footer__autor_theme_dark">&#169;Road Club 2021</p>
+          <p class="footer__autor footer__autor_theme_dark">
+            &#169;Road Club 2021
+          </p>
           <div class="footer__theme">
             <img
-              class="footer__imag-theme"
+              class="footer__imag-theme imag-theme__sun"
               src="./images/sun.svg"
               alt="солнце"
-            />
+            >
             <label class="footer__checkbox">
-              <input class="footer__checkbox-input" type="checkbox" checked/>
+              <input class="footer__checkbox-input" type="checkbox">
               <span class="footer__checkbox-stile"></span>
             </label>
             <img
-              class="footer__imag-theme"
+              class="footer__imag-theme imag-theme__moon"
               src="./images/moon.svg"
               alt="луна"
-            />
+            >
           </div>
-          <img class="footer__logo" src="./images/logo-dark.svg" alt="логотип" />
+          <img class="footer__logo" src="./images/logo.svg" alt="логотип">
         </div>
       </div>
     </footer>
     <div class="popup popup_theme_dark">
-      <button class="popup__close popup__close_theme_dark" type="button"></button>
+      <button
+        class="popup__close popup__close_theme_dark"
+        type="button"
+      ></button>
       <h2 class="popup__title popup__title_theme_dark">Покрытия и градиенты</h2>
       <h2 class="popup__title popup__title_theme_dark">Велосипеды</h2>
       <h2 class="popup__title popup__title_theme_dark">Тренировки</h2>
       <div class="footer__theme popup__theme">
-        <img class="footer__imag-theme" src="./images/sun.svg" alt="солнце" />
+        <img class="footer__imag-theme" src="./images/sun.svg" alt="солнце" >
         <label class="footer__checkbox">
-          <input class="footer__checkbox-input" type="checkbox" />
+          <input
+            class="footer__checkbox-input popup__checkbox-input"
+            type="checkbox"
+          >
           <span class="footer__checkbox-stile"></span>
         </label>
-        <img class="footer__imag-theme" src="./images/moon.svg" alt="луна" />
+        <img class="footer__imag-theme" src="./images/moon.svg" alt="луна" >
       </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/pages/index.js"></script>
   </body>
 </html>
