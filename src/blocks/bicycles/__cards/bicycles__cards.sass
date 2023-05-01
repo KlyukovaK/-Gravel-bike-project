@@ -1,0 +1,11 @@
+@use '../../../sass/variables.sass' as v
+.bicycles__cards
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(auto-fit,minmax(280px,380px))
+  grid-auto-flow: row
+  gap: 30px
+  @media screen and (max-width: v.$screen-mb)
+    justify-items: center
+    grid-template-columns: 1fr
+    margin: 20px 0

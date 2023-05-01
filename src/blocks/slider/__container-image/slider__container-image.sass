@@ -1,0 +1,15 @@
+@use '../../../sass/variables.sass' as v
+.slider__container-image
+  display: grid
+  width: 100%
+  justify-content: space-between
+  position: relative
+  max-width: 1440px
+  max-height: 400px
+  overflow: hidden
+  @media screen and (max-width: v.$screen-tab)
+    grid-template-columns: 1fr
+    justify-items: center
+  @media screen and (max-width: v.$screen-mb)
+    grid-row: 2
+    grid-column: 1/3

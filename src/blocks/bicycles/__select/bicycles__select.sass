@@ -1,0 +1,22 @@
+@use '../../../sass/variables' as v
+.bicycles__select
+  display: none
+  @media screen and (max-width: v.$screen-mb)
+    display: block
+    margin: 40px 0 0
+    border: 1px solid #E3E3E3
+    border-radius: 2px
+    width: 114px
+    height: 30px
+    background: none
+    font-family: v.$font-family
+    font-style: normal
+    font-weight: 600
+    font-size: 11px
+    line-height: 1.27
+    color: v.$color-main
+    cursor: pointer
+    &:focus
+      border: 1px solid #C7C7C7
+      border-radius: 4px
+      outline: 0

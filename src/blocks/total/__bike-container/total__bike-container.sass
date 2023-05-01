@@ -1,0 +1,14 @@
+@use '../../../sass/variables.sass' as v
+.total__bike-container
+  position: absolute
+  top: 370px
+  right: 370px
+  height: 430px
+  @media screen and (max-width: v.$screen-tab)
+    right: 240px
+    height: 330px
+  @media screen and (max-width: v.$screen-mb)
+    left: 0
+    top: 311px
+    width: 234px
+    height: 300px

@@ -1,0 +1,10 @@
+@use '../../../sass/variables.sass' as v
+.header__links
+  margin: 28px 120px
+  display: flex
+  justify-content: end
+  gap: 34px
+  @media screen and (max-width: v.$screen-tab)
+    margin-right: 60px
+  @media screen and (max-width: v.$screen-mb)
+    display: none
