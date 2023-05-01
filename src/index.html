@@ -17,11 +17,11 @@
   <body class="page page_theme_dark">
     <header class="header page__header">
       <nav class="header__links">
-        <a class="header__link header__link_theme_dark" href="#"
+        <a class="header__link header__link_theme_dark" href="#slider"
           >Покрытия и градиенты</a
         >
-        <a class="header__link header__link_theme_dark" href="#">Велосипеды</a>
-        <a class="header__link header__link_theme_dark" href="#">Тренировки</a>
+        <a class="header__link header__link_theme_dark" href="#bicycles">Велосипеды</a>
+        <a class="header__link header__link_theme_dark" href="#training">Тренировки</a>
       </nav>
       <button
         class="header__menu header__menu_theme_dark"
@@ -42,7 +42,7 @@
         </button>
         <p class="total__name-bike total__name-bike_theme_dark">
           Cannondale Systemsix<span
-            class="total__colorBG total__colorBG_theme_dark"
+            class="total__color-bg total__color-bg_theme_dark"
           ></span>
         </p>
         <div class="total__bike-container">
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section class="slider" id="slider">
         <h2 class="slider__title slider__title_theme_dark">Шоссе</h2>
         <p class="slider__subtitle slider__subtitle_theme_dark">
           На шоссейном велосипеде можно ездить по асфальту на разных градиентах:
@@ -108,20 +108,20 @@
         </div>
       </section>
 
-      <section class="bicycles">
+      <section class="bicycles" id="bicycles">
         <div class="bicycles__top">
           <h2 class="bicycles__title bicycles__title_theme_dark">Велосипеды</h2>
-          <nav class="bicycles__ways">
-            <a
+          <ul class="bicycles__ways">
+            <li
               class="bicycles__way bicycles__way_theme_dark bicycles__way_active bicycles__way_theme_dark-active"
-              href="#"
-              >Шоссе</a
+
+              >Шоссе</li
             >
-            <a class="bicycles__way bicycles__way_theme_dark" href="#"
-              >Грэвел</a
+            <li class="bicycles__way bicycles__way_theme_dark"
+              >Грэвел</li
             >
-            <a class="bicycles__way bicycles__way_theme_dark" href="#">TT</a>
-          </nav>
+            <li class="bicycles__way bicycles__way_theme_dark">TT</li>
+          </ul>
           <select class="bicycles__select bicycles__select_theme_dark">
             <option class="bicycles__select-way" value="1">Шоссе</option>
             <option class="bicycles__select-way" value="2">Грэвел</option>
@@ -167,7 +167,7 @@
         </ul>
       </section>
 
-      <section class="training">
+      <section class="training" id="training">
         <h2 class="training__title training__title_theme_dark">Тренировки</h2>
         <p class="training__subtitle training__subtitle_theme_dark">
           Чтобы найти маршрут для тренировки можно воспользоваться сервисом
@@ -195,17 +195,17 @@
         <h2 class="footer__title footer__title_theme_dark">
           Подпишитесь на рассылку —
         </h2>
-        <div class="footer__input-case">
+        <form class="footer__input-case">
           <input
             class="footer__input footer__input_theme_dark"
             type="email"
             placeholder="Ваш e-mail"
           >
-          <span class="footer__input-subtitle">Круто!</span>
-          <div class="footer__input-buttom footer__input-buttom_theme_dark">
+          <span class="footer__input-subtitle footer__input-subtitle_theme_dark">Круто!</span>
+          <button class="footer__input-buttom footer__input-buttom_theme_dark" type="submit">
             ok
-          </div>
-        </div>
+          </button>
+        </form>
         <div class="footer__bottom">
           <p class="footer__autor footer__autor_theme_dark">
             &#169;Road Club 2021
@@ -250,6 +250,6 @@
         <img class="footer__imag-theme" src="./images/moon.svg" alt="луна" >
       </div>
     </div>
-    <script src="./js/pages/index.js"></script>
+    <script src="./js/scripts/index.js"></script>
   </body>
 </html>
