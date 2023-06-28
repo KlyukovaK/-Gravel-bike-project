@@ -13,6 +13,7 @@
   "author": "Klyukova Kristina",
   "license": "ISC",
   "dependencies": {
+    "@ya.praktikum/react-developer-burger-ui-components": "^1.14.0",
     "core-js": "^3.28.0"
   },
   "devDependencies": {
