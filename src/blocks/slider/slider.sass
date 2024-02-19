@@ -1,0 +1,11 @@
+@use '../../sass/variables.sass' as v
+.slider
+  width: 100%
+  display: grid
+  row-gap: 50px
+  @media screen and (max-width: v.$screen-tab)
+    width: 88.75%
+    margin: 0 auto
+    row-gap: 40px
+  @media screen and (max-width: v.$screen-mb)
+    margin-inline: 18px

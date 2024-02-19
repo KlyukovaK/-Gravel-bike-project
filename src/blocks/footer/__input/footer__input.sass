@@ -1,0 +1,28 @@
+@use '../../../sass/variables' as v
+.footer__input
+  border: 1px solid rgba(199, 199, 199, 0.5)
+  border-radius: 4px
+  width: 100%
+  max-width: 340px
+  height: 28px
+  background: none
+  padding: 11px 0 11px 20px
+  cursor: pointer
+  &::placeholder
+    font-family: v.$font-family
+    font-style: normal
+    font-weight: 500
+    font-size: 13px
+    line-height: 2.15
+    color: v.$color-main
+    opacity: 0.7
+  &:hover::placeholder
+    opacity: 1
+  &:focus
+    border: 1px solid #C7C7C7
+    border-radius: 4px
+    outline: 0
+  &:focus~ &-buttom
+    opacity: 1
+  @media screen and (max-width: v.$screen-mb)
+    max-width: 262px
